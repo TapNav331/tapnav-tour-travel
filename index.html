@@ -384,52 +384,540 @@
 
 
 <section id="gallery" class="section gallery-section">
-  <div class="section-head">
+  <section id="gallery" class="section gallery-section">
+
+  <div class="section-head gallery-head">
     <span>TRAVEL GALLERY • यात्रा गैलरी</span>
     <h2>See the places. Feel the journey.</h2>
-    <p>Explore beautiful moments from Lucknow, Ayodhya and Uttar Pradesh. Tap any photo to view it full screen.</p>
+    <p>
+      Explore beautiful moments from Lucknow, Ayodhya and Uttar Pradesh.
+      Tap any photo to view it full screen.
+    </p>
   </div>
+
+  <!-- Gallery Filters -->
   <div class="gallery-filters" role="tablist" aria-label="Gallery categories">
-    <button class="gallery-filter active" data-filter="all" type="button">All</button>
-    <button class="gallery-filter" data-filter="lucknow" type="button">Lucknow</button>
-    <button class="gallery-filter" data-filter="ayodhya" type="button">Ayodhya</button>
-    <button class="gallery-filter" data-filter="heritage" type="button">Heritage</button>
-    <button class="gallery-filter" data-filter="travel" type="button">Travel</button>
+    <button class="gallery-filter active" data-filter="all" type="button">
+      All
+    </button>
+
+    <button class="gallery-filter" data-filter="lucknow" type="button">
+      Lucknow
+    </button>
+
+    <button class="gallery-filter" data-filter="ayodhya" type="button">
+      Ayodhya
+    </button>
+
+    <button class="gallery-filter" data-filter="heritage" type="button">
+      Heritage
+    </button>
+
+    <button class="gallery-filter" data-filter="travel" type="button">
+      Travel
+    </button>
   </div>
+
+  <!-- Gallery -->
   <div class="gallery-grid" id="galleryGrid">
-    <button class="gallery-item" data-category="lucknow heritage" data-title="Lucknow Heritage" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=85" alt="Heritage architecture in Lucknow">
-      <span class="gallery-caption">Lucknow Heritage<small>City • Culture • History</small></span>
+
+    <button class="gallery-item gallery-large"
+      data-category="lucknow heritage"
+      data-title="Lucknow Heritage"
+      type="button">
+
+      <img
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=1200&q=85"
+        alt="Heritage architecture">
+
+      <span class="gallery-overlay">
+        <strong>Lucknow Heritage</strong>
+        <small>City • Culture • History</small>
+      </span>
     </button>
-    <button class="gallery-item" data-category="ayodhya heritage" data-title="Ayodhya Darshan" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=85" alt="Indian temple architecture for Ayodhya Darshan">
-      <span class="gallery-caption">Ayodhya Darshan<small>Spiritual • Sacred • Peaceful</small></span>
+
+    <button class="gallery-item"
+      data-category="ayodhya heritage"
+      data-title="Ayodhya"
+      type="button">
+
+      <img
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85"
+        alt="Indian heritage architecture">
+
+      <span class="gallery-overlay">
+        <strong>Ayodhya</strong>
+        <small>Spiritual • Heritage</small>
+      </span>
     </button>
-    <button class="gallery-item" data-category="lucknow travel" data-title="Lucknow City Tour" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=85" alt="India travel destination">
-      <span class="gallery-caption">Lucknow City Tour<small>Discover Uttar Pradesh</small></span>
+
+    <button class="gallery-item"
+      data-category="travel"
+      data-title="India Travel"
+      type="button">
+
+      <img
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=85"
+        alt="India travel destination">
+
+      <span class="gallery-overlay">
+        <strong>India Travel</strong>
+        <small>Explore • Discover</small>
+      </span>
     </button>
-    <button class="gallery-item" data-category="ayodhya travel" data-title="Ayodhya Journey" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=85" alt="Indian cultural travel destination">
-      <span class="gallery-caption">Ayodhya Journey<small>Darshan • Travel • Memories</small></span>
+
+    <button class="gallery-item"
+      data-category="lucknow travel"
+      data-title="Explore Lucknow"
+      type="button">
+
+      <img
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=900&q=85"
+        alt="Travel destination">
+
+      <span class="gallery-overlay">
+        <strong>Explore Lucknow</strong>
+        <small>Travel • Experience</small>
+      </span>
     </button>
-    <button class="gallery-item" data-category="heritage travel" data-title="Indian Heritage" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85" alt="Indian heritage architecture">
-      <span class="gallery-caption">Indian Heritage<small>Architecture • Culture</small></span>
+
+    <button class="gallery-item gallery-wide"
+      data-category="heritage travel"
+      data-title="Indian Heritage"
+      type="button">
+
+      <img
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=85"
+        alt="Indian heritage monument">
+
+      <span class="gallery-overlay">
+        <strong>Indian Heritage</strong>
+        <small>Architecture • History</small>
+      </span>
     </button>
-    <button class="gallery-item" data-category="travel lucknow" data-title="Travel Memories" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=900&q=85" alt="Travel photography in India">
-      <span class="gallery-caption">Travel Memories<small>Every trip tells a story</small></span>
+
+    <button class="gallery-item"
+      data-category="ayodhya travel"
+      data-title="Journey Through India"
+      type="button">
+
+      <img
+        loading="lazy"
+        src="https://images.unsplash.com/photo-1602643163986-90c0e9b8c4f2?auto=format&fit=crop&w=900&q=85"
+        alt="India travel">
+
+      <span class="gallery-overlay">
+        <strong>Journey Through India</strong>
+        <small>Adventure • Memories</small>
+      </span>
     </button>
-    <button class="gallery-item" data-category="heritage ayodhya" data-title="Temple & Tradition" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?auto=format&fit=crop&w=900&q=85" alt="Temple and Indian tradition">
-      <span class="gallery-caption">Temple & Tradition<small>Faith • Culture • India</small></span>
-    </button>
-    <button class="gallery-item" data-category="travel lucknow" data-title="Uttar Pradesh Explorer" type="button">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=85" alt="Scenic travel destination in India">
-      <span class="gallery-caption">Uttar Pradesh Explorer<small>Roads • Places • Experiences</small></span>
-    </button>
+
   </div>
+
+  <!-- Fullscreen Viewer -->
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+
+    <button class="gallery-modal-close"
+      id="galleryModalClose"
+      type="button"
+      aria-label="Close image">
+      &times;
+    </button>
+
+    <img id="galleryModalImage" src="" alt="">
+
+    <div class="gallery-modal-caption" id="galleryModalCaption"></div>
+
+  </div>
+
+</section>
+2. Add this CSS
+Put this before </style> in your existing HTML:
+
+/* ================================
+   MODERN TRAVEL GALLERY
+================================ */
+
+.gallery-section {
+  position: relative;
+  padding: 80px 20px;
+  background:
+    linear-gradient(180deg, #fff 0%, #f8fbff 100%);
+}
+
+.gallery-head {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 35px;
+}
+
+.gallery-head > span {
+  display: inline-block;
+  color: #ff5722;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.gallery-head h2 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 5vw, 44px);
+  color: #162033;
+}
+
+.gallery-head p {
+  margin: 0;
+  color: #687386;
+  line-height: 1.7;
+}
+
+/* FILTERS */
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto 35px;
+}
+
+.gallery-filter {
+  border: 1px solid #dfe5ed;
+  background: #fff;
+  color: #465166;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .25s ease;
+}
+
+.gallery-filter:hover,
+.gallery-filter.active {
+  background: #ff5722;
+  color: #fff;
+  border-color: #ff5722;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255,87,34,.22);
+}
+
+/* GRID */
+
+.gallery-grid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 240px;
+  gap: 18px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  border-radius: 18px;
+  background: #ddd;
+  cursor: pointer;
+  min-height: 240px;
+}
+
+.gallery-item.gallery-large {
+  grid-row: span 2;
+}
+
+.gallery-item.gallery-wide {
+  grid-column: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 35%,
+      rgba(0,0,0,.78) 100%
+    );
+  opacity: .85;
+  transition: .3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* TEXT OVER IMAGE */
+
+.gallery-overlay {
+  position: absolute;
+  z-index: 2;
+  left: 22px;
+  right: 22px;
+  bottom: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.gallery-overlay strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.gallery-overlay small {
+  display: block;
+  opacity: .85;
+  font-size: 13px;
+}
+
+/* FILTER ANIMATION */
+
+.gallery-item.hide {
+  display: none;
+}
+
+/* FULLSCREEN MODAL */
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: rgba(8, 13, 24, .94);
+  backdrop-filter: blur(8px);
+}
+
+.gallery-modal.show {
+  display: flex;
+}
+
+.gallery-modal img {
+  max-width: min(1100px, 92vw);
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 70px rgba(0,0,0,.5);
+}
+
+.gallery-modal-close {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.gallery-modal-close:hover {
+  background: #ff5722;
+}
+
+.gallery-modal-caption {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 210px;
+  }
+
+  .gallery-item.gallery-large {
+    grid-row: span 1;
+  }
+
+  .gallery-item.gallery-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .gallery-section {
+    padding: 60px 15px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 260px;
+  }
+
+  .gallery-item.gallery-wide {
+    grid-column: span 1;
+  }
+
+  .gallery-filters {
+    gap: 7px;
+  }
+
+  .gallery-filter {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+3. Add the JavaScript
+Put this just before </body>:
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* Gallery filters */
+  const filterButtons =
+    document.querySelectorAll(".gallery-filter");
+
+  const galleryItems =
+    document.querySelectorAll(".gallery-item");
+
+  filterButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+      const filter = this.dataset.filter;
+
+      filterButtons.forEach(btn =>
+        btn.classList.remove("active")
+      );
+
+      this.classList.add("active");
+
+      galleryItems.forEach(item => {
+
+        const categories =
+          item.dataset.category.split(" ");
+
+        if (filter === "all" ||
+            categories.includes(filter)) {
+
+          item.classList.remove("hide");
+
+        } else {
+
+          item.classList.add("hide");
+
+        }
+
+      });
+
+    });
+
+  });
+
+
+  /* Fullscreen image viewer */
+
+  const modal =
+    document.getElementById("galleryModal");
+
+  const modalImage =
+    document.getElementById("galleryModalImage");
+
+  const modalCaption =
+    document.getElementById("galleryModalCaption");
+
+  const closeButton =
+    document.getElementById("galleryModalClose");
+
+
+  galleryItems.forEach(item => {
+
+    item.addEventListener("click", function () {
+
+      const image =
+        this.querySelector("img");
+
+      modalImage.src = image.src;
+      modalImage.alt = image.alt;
+
+      modalCaption.textContent =
+        this.dataset.title || image.alt;
+
+      modal.classList.add("show");
+      modal.setAttribute("aria-hidden", "false");
+
+      document.body.style.overflow = "hidden";
+
+    });
+
+  });
+
+
+  function closeGallery() {
+
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+
+    document.body.style.overflow = "";
+
+    modalImage.src = "";
+
+  }
+
+
+  closeButton.addEventListener(
+    "click",
+    closeGallery
+  );
+
+
+  modal.addEventListener("click", function (event) {
+
+    if (event.target === modal) {
+      closeGallery();
+    }
+
+  });
+
+
+  document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+      closeGallery();
+    }
+
+  });
+
+});
+</script>
 </section>
 
 <section id="feedback" class="section feedback-section">
