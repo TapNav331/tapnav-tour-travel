@@ -882,3 +882,11 @@ function sendWhatsApp(event) {
 
 </body>
 </html>
+<style id="tapnav-brush-tricolour">
+.header{background:#fff!important;backdrop-filter:none!important;isolation:isolate}
+.header::before{content:"";display:block!important;position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.95;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 180' preserveAspectRatio='none'%3E%3Cpath d='M-100 70 C180 -5 340 145 650 72 S1120 0 1700 58' fill='none' stroke='%23ff781f' stroke-width='58' stroke-linecap='round' opacity='.85'/%3E%3Cpath d='M-90 91 C200 18 360 157 665 92 S1135 22 1690 78' fill='none' stroke='%23f7ac6a' stroke-width='15' stroke-linecap='round'/%3E%3Cpath d='M-100 119 C180 47 380 188 710 119 S1200 47 1700 106' fill='none' stroke='%23eaf5ef' stroke-width='34' stroke-linecap='round'/%3E%3Cpath d='M-100 162 C190 86 380 220 720 158 S1220 87 1700 145' fill='none' stroke='%230b9851' stroke-width='48' stroke-linecap='round' opacity='.84'/%3E%3Cpath d='M-80 152 C210 80 400 209 735 149 S1235 81 1680 137' fill='none' stroke='%237acb9d' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M80 80 C300 26 430 116 610 107 S900 60 1070 67' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' opacity='.9'/%3E%3C/svg%3E") center/110% 135% no-repeat;animation:brush-drift 13s ease-in-out infinite alternate}
+.header::after{content:"";position:absolute!important;inset:0!important;height:auto!important;z-index:0;pointer-events:none;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.38) 49%,transparent 63%);background-size:220% 100%;animation:brush-sweep 9s ease-in-out infinite}
+.header>*{position:relative;z-index:1}.header .brand-logo::after,.header .main-nav a,.header .menu-toggle{color:#163326;text-shadow:0 1px 3px rgba(255,255,255,.92)}
+@keyframes brush-drift{to{background-position:53% 48%}}@keyframes brush-sweep{0%,100%{background-position:110% 0}50%{background-position:-110% 0}}
+@media(prefers-reduced-motion:reduce){.header::before,.header::after{animation:none!important}}
+</style>
