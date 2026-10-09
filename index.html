@@ -338,6 +338,12 @@ img,video,iframe{max-width:100%}
 @media(max-width:850px){.header .brand-logo img{max-height:52px}.header .brand-logo::after{font-size:15px}.header::after{height:3px}}
 @media(max-width:380px){.header .brand-logo{gap:7px}.header .brand-logo img{width:130px;max-height:46px}.header .brand-logo::after{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.header::after{animation:none;background-position:50%}}
+.header::before{content:"🇮🇳";position:absolute;top:50%;right:clamp(150px,17vw,230px);font-family:"Segoe UI Emoji",sans-serif;font-size:32px;line-height:1;transform-origin:10% 50%;animation:flag-fly 1.6s ease-in-out infinite;filter:drop-shadow(0 2px 2px #0003);z-index:2;pointer-events:none}
+@keyframes flag-fly{0%,100%{transform:translateY(-50%) rotate(-4deg) skewY(-2deg)}50%{transform:translateY(-50%) rotate(4deg) skewY(2deg)}}
+@media(max-width:1200px){.header::before{right:clamp(18px,2vw,30px)}}
+@media(max-width:850px){.header::before{right:clamp(68px,10vw,92px);font-size:28px}}
+@media(max-width:380px){.header::before{right:62px;font-size:26px}}
+@media(prefers-reduced-motion:reduce){.header::before{animation:none;transform:translateY(-50%)}}
 </style>
 </head>
 <body>
