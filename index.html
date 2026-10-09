@@ -329,6 +329,15 @@ img,video,iframe{max-width:100%}
 .booking-form input,.booking-form select,.booking-form textarea{width:100%;min-width:0}
 .hero-content,.section-head,.card-body,.dest-copy{overflow-wrap:anywhere}
 @media(max-width:600px){.cards,.services,.feedback-grid,.destinations,.faq-grid{grid-template-columns:minmax(0,1fr)}.feedback-card:last-child{grid-column:auto}}
+.header .brand-logo{gap:10px}
+.header .brand-logo img{width:185px;max-height:68px}
+.header .brand-logo::after{content:"TapNav Tour & Travel";font-size:19px;font-weight:800;line-height:1.1;letter-spacing:-.35px;color:var(--green-dark);white-space:nowrap}
+.header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#ff9933 0%,#fff 50%,#138808 100%);background-size:200% 100%;animation:tricolor-wave 7s ease-in-out infinite;pointer-events:none}
+@keyframes tricolor-wave{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media(max-width:1200px){.header{gap:12px;padding-inline:4%}.main-nav{gap:clamp(7px,1vw,12px);font-size:13px}.header-whatsapp{display:none}.header .brand-logo::after{font-size:17px}}
+@media(max-width:850px){.header .brand-logo img{max-height:52px}.header .brand-logo::after{font-size:15px}.header::after{height:3px}}
+@media(max-width:380px){.header .brand-logo{gap:7px}.header .brand-logo img{width:130px;max-height:46px}.header .brand-logo::after{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.header::after{animation:none;background-position:50%}}
 </style>
 </head>
 <body>
