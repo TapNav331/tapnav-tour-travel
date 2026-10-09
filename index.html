@@ -317,6 +317,18 @@
 }
 3. Add the JavaScript
 Put this just before </body>:
+/* Flexible layouts: cards reflow to fit the available width. */
+img,video,iframe{max-width:100%}
+.card,.destination,.services article,.feedback-card,.contact>*{min-width:0}
+.cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}
+.services{grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr))}
+.feedback-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr))}
+.feedback-card:last-child{grid-column:auto}
+.destinations{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.faq-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.booking-form input,.booking-form select,.booking-form textarea{width:100%;min-width:0}
+.hero-content,.section-head,.card-body,.dest-copy{overflow-wrap:anywhere}
+@media(max-width:600px){.cards,.services,.feedback-grid,.destinations,.faq-grid{grid-template-columns:minmax(0,1fr)}.feedback-card:last-child{grid-column:auto}}
 </style>
 </head>
 <body>
